@@ -17,7 +17,7 @@ class EventManager:
         # 事件处理线程
         self.__thread = Thread(target=self.__run, name='Synchronous')
         # 事件处理线程池
-        self.__pool = ThreadPoolExecutor(3)
+        self.__pool = ThreadPoolExecutor(6)
         # 阻塞函数列表
         self.__block = []
 

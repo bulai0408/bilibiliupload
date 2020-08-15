@@ -233,7 +233,7 @@ class Monitoring(Timer):
                 logger.info('卡死下载进程成功退出')
                 return
         self.last_file_size = file_size
-        if file_size >= 2.5:
+        if file_size >= 0.8:
             if self.numc == 0:
                 self.flag.set()
             else:
